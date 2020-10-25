@@ -42,16 +42,17 @@
 .pumpkin {
   -webkit-clip-path: circle();
           clip-path: circle();
-  -webkit-filter: grayscale(50%);
-          filter: grayscale(50%);
   width: 40rem;
   height: 30rem;
-  margin: 3rem;
+  margin: 5rem;
+  cursor: pointer;
 }
 
 .pumpkin:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
