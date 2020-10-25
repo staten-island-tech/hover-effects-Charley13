@@ -1,0 +1,27 @@
+.container {
+  width: 80vw;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem;
+  font-size: 1.5rem;
+  align-items: center;
+  text-align: center;
+}
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-style: italic;
+  background-color: rgb(133, 15, 15);
+  color: black;
+  padding: 2rem;
+  clip-path: ellipse();
+  cursor: pointer;
+  transition: all 2s;
+}
+.btn:hover {
+  background: transparent;
+  color: rgb(133, 15, 15);
+  transform: rotate(360deg);
+}
