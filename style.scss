@@ -37,10 +37,6 @@
   transform: scale(1.2);
   transition: all 0.3s;
 }
-.pumpkin:hover::after {
-  transform: scale(0.9);
-  transition-delay: 1s;
-}
 .spookygallery {
   margin: 3rem;
   position: relative;
@@ -48,22 +44,22 @@
 .spookyimg {
   position: absolute;
   height: 20rem;
-  box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.4);
   transition: all 0.3s;
-  outline-offset: 1rem;
+  padding: 1rem;
 }
 .spookyimg:hover {
   transform: scale(1.3);
   box-shadow: 0 3rem 1rem rgba(0, 0, 0, 0.4);
   z-index: 2;
-  outline-style: 1rem groove color(red);
+  border: dotted red;
+  border-width: 3px 3px;
 }
 .spookygallery:hover .spookyimg:not(:hover) {
   transform: scale(0.8);
   opacity: 0.3;
 }
 .SI1 {
-  top: 60rem;
+  top: 65rem;
   left: 55%;
 }
 .SI2 {
@@ -78,4 +74,23 @@
   top: 70rem;
   left: 40rem;
   height: 10rem;
+}
+.icon {
+  margin-top: 45rem;
+  width: 15rem;
+  background-color: black;
+}
+.icon:before {
+  transition: all 0.5s;
+  transform: scale(0.9);
+  z-index: -1;
+}
+.icon:hover::before {
+  box-shadow: 0 0 15px #ffee10;
+}
+.icon:hover {
+  color: #ffee10;
+  transform: scale(1.2);
+  box-shadow: 0 0 5px #ffee10;
+  text-shadow: 0 0 5px #ffee10;
 }
