@@ -127,11 +127,10 @@
 }
 
 .icon:hover {
-  color: #ffee10;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-box-shadow: 0 0 5px #ffee10;
-          box-shadow: 0 0 5px #ffee10;
-  text-shadow: 0 0 5px #ffee10;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 60px 30px black, 0 0 50px 30px #c31432, 0 0 70px 45px #240b36;
+          box-shadow: 0 0 60px 30px black, 0 0 50px 30px #c31432, 0 0 70px 45px #240b36;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 /*# sourceMappingURL=style.css.map */

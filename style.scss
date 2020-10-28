@@ -89,8 +89,11 @@
   box-shadow: 0 0 15px #ffee10;
 }
 .icon:hover {
-  color: #ffee10;
-  transform: scale(1.2);
-  box-shadow: 0 0 5px #ffee10;
-  text-shadow: 0 0 5px #ffee10;
+  // color: #ffee10;
+  // transform: scale(1.2);
+  // box-shadow: 0 0 5px #ffee10;
+  // text-shadow: 0 0 5px #ffee10;
+  background-color: #fff;
+  box-shadow: 0 0 60px 30px black, 0 0 50px 30px #c31432, 0 0 70px 45px #240b36;
+  transform: scale(1.3);
 }
