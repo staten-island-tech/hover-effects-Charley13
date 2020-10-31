@@ -49,12 +49,12 @@
 }
 
 .pumpkin:hover {
-  -webkit-filter: grayscale(50%);
-          filter: grayscale(50%);
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
 }
 
 .spookygallery {
@@ -121,16 +121,25 @@
   z-index: -1;
 }
 
-.icon:hover::before {
-  -webkit-box-shadow: 0 0 15px #ffee10;
-          box-shadow: 0 0 15px #ffee10;
-}
-
 .icon:hover {
   background-color: #fff;
   -webkit-box-shadow: 0 0 60px 30px black, 0 0 50px 30px #c31432, 0 0 70px 45px #240b36;
           box-shadow: 0 0 60px 30px black, 0 0 50px 30px #c31432, 0 0 70px 45px #240b36;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
+}
+
+.rainbow-picture {
+  width: 30rem;
+  margin: 6rem;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.rainbow-picture:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 /*# sourceMappingURL=style.css.map */
