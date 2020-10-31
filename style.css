@@ -46,15 +46,15 @@
   height: 30rem;
   margin: 5rem;
   cursor: pointer;
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
 }
 
 .pumpkin:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  -webkit-filter: grayscale(50%);
-          filter: grayscale(50%);
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
 }
 
 .spookygallery {
@@ -123,23 +123,56 @@
 
 .icon:hover {
   background-color: #fff;
-  -webkit-box-shadow: 0 0 60px 30px black, 0 0 50px 30px #c31432, 0 0 70px 45px #240b36;
-          box-shadow: 0 0 60px 30px black, 0 0 50px 30px #c31432, 0 0 70px 45px #240b36;
+  -webkit-box-shadow: 0 0 50px 30px #d66d75, 0 0 70px 45px #e29587;
+          box-shadow: 0 0 50px 30px #d66d75, 0 0 70px 45px #e29587;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
 }
 
+.rainbow {
+  position: relative;
+}
+
 .rainbow-picture {
-  width: 30rem;
+  width: 50rem;
   margin: 6rem;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+          clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .rainbow-picture:hover {
-  -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+          clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.rainbow-text {
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  top: 60%;
+  left: 47%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 5rem;
+  height: 90vh;
+  line-height: 90vh;
+  color: #fcedd8;
+  font-family: "Niconne", cursive;
+  font-weight: 700;
+  text-shadow: 5px 5px 0px #eb452b, 10px 10px 0px #efa032, 15px 15px 0px #46b59b, 20px 20px 0px #017e7f, 25px 25px 0px #052939, 30px 30px 0px #c11a2b;
+}
+
+.rainbow-text:hover {
+  opacity: 100%;
+  position: absolute;
+  top: 40%;
+  left: 48%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 /*# sourceMappingURL=style.css.map */

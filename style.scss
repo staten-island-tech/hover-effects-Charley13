@@ -31,11 +31,11 @@
   height: 30rem;
   margin: 5rem;
   cursor: pointer;
+  filter: grayscale(50%);
 }
 .pumpkin:hover {
   transform: scale(1.2);
-  transition: all 0.3s;
-  filter: grayscale(50%);
+  filter: grayscale(0%);
 }
 .spookygallery {
   margin: 3rem;
@@ -87,16 +87,106 @@
 }
 .icon:hover {
   background-color: #fff;
-  box-shadow: 0 0 60px 30px black, 0 0 50px 30px #c31432, 0 0 70px 45px #240b36;
+  box-shadow: 0 0 50px 30px #d66d75, 0 0 70px 45px #e29587;
   transform: scale(1.3);
 }
-
+.rainbow {
+  position: relative;
+}
 .rainbow-picture {
-  width: 30rem;
+  width: 50rem;
   margin: 6rem;
-  filter: grayscale(100%);
+  filter: grayscale(0%);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  transition: all 0.3s;
 }
 .rainbow-picture:hover {
-  filter: grayscale(0%);
-  transform: scale(1.2);
+  // filter: grayscale(100%);
+  // transform: scale(1.2);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
 }
+.rainbow-text {
+  opacity: 0;
+  position: absolute;
+  transition: all 0.3s;
+  top: 60%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  height: 90vh;
+  line-height: 90vh;
+  color: #fcedd8;
+  font-family: "Niconne", cursive;
+  font-weight: 700;
+  text-shadow: 5px 5px 0px #eb452b, 10px 10px 0px #efa032, 15px 15px 0px #46b59b,
+    20px 20px 0px #017e7f, 25px 25px 0px #052939, 30px 30px 0px #c11a2b;
+}
+.rainbow-text:hover {
+  opacity: 100%;
+  position: absolute;
+  top: 40%;
+  left: 48%;
+  transition: all 1s;
+}
+
+// figure.rainbow {
+//   background: #be230e;
+// }
+
+// figure.rainbow img {
+//   opacity: 0.9;
+//   -webkit-transition: opacity 0.35s;
+//   transition: opacity 0.35s;
+// }
+
+// figure.rainbow figcaption::before {
+//   position: absolute;
+//   top: 30px;
+//   right: 30px;
+//   bottom: 30px;
+//   left: 30px;
+//   border: 2px solid #fff;
+//   box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.2);
+//   content: "";
+//   opacity: 0;
+//   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+//   transition: opacity 0.35s, transform 0.35s;
+//   -webkit-transform: scale3d(1.4, 1.4, 1);
+//   transform: scale3d(1.4, 1.4, 1);
+// }
+// figure.rainbow:hover figcaption::before,
+// figure.rainbow:hover p {
+//   opacity: 1;
+//   -webkit-transform: scale3d(1, 1, 1);
+//   transform: scale3d(1, 1, 1);
+// }
+
+// figure.rainbow:hover figcaption {
+//   background-color: rgba(58, 52, 42, 0);
+// }
+
+// figure.rainbow:hover img {
+//   opacity: 0.4;
+// }
